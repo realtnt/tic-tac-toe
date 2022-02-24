@@ -36,7 +36,7 @@ function App() {
     let isGameOver = false
     for (let i of winCombs) {
       if (squares[i[0]].player === squares[i[1]].player && squares[i[1]].player === squares[i[2]].player) {
-        if (squares[i[0]].player != '') {
+        if (squares[i[0]].player !== '') {
           isGameOver = true
           setStatusText('Winner: ' + currentTurn)
           setGameOverColours(currentTurn)

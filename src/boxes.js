@@ -1,4 +1,4 @@
-export default [
+export default boxes = [
     {
         id: 1,
         player: ""
