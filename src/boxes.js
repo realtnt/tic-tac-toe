@@ -1,4 +1,4 @@
-export const boxes = Array[
+const boxes = [
     {
         id: 1,
         player: ""
@@ -36,3 +36,5 @@ export const boxes = Array[
         player: ""
     },
 ]
+
+export default boxes
