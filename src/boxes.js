@@ -1,4 +1,4 @@
-export default boxes = [
+export const boxes = Array[
     {
         id: 1,
         player: ""
