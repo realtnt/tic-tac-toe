@@ -1,0 +1,116 @@
+@import url(reset.css);
+
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 100px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 27.75rem;
+}
+
+.square {
+  justify-self: stretch;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 9rem;
+  width: 9.25rem;
+  height: 9rem;
+  text-align: center;
+  border: 1px black solid;
+  color: black;
+  transition: 0.5s all;
+}
+
+.square:hover {
+  background-color:lemonchiffon;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  border-radius: 5px;
+  align-self: stretch;
+  transition: 1.5s all;
+}
+
+.board--winnerX,
+.status--winnerX 
+{
+  background-color: lightblue !important;
+}
+
+.board--winnerO,
+.status--winnerO 
+{
+  background-color: lightsalmon !important;
+}
+
+.board--tie,
+.status--tie
+{
+  background-color: lightgray !important;
+}
+
+.status {
+  font-family: 'Concert One', cursive;
+  align-self: stretch;
+  font-size: 2rem;
+  line-height: 5rem;
+  height: 5rem;
+  background-color:lemonchiffon;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 8px 0 4px 0; 
+  text-align: center;
+  transition:0.5s all;
+}
+
+button {
+  font-family: 'Concert One', cursive;
+  font-size: 2rem;
+  line-height: 5rem;
+  color: white;
+  background-color:dimgrey;
+  text-align: center;
+  margin: 4px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  align-self: stretch;
+  transition:0.5s all;
+}
+
+button:hover {
+  background-color: gold;
+}
+
+button:active {
+  background-color: lemonchiffon;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
